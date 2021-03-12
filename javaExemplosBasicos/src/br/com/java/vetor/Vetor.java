@@ -1,6 +1,8 @@
-package br.com.java.modelo;
+package br.com.java.vetor;
 
 import java.util.Arrays;
+
+import br.com.java.modelo.Aluno;
 
 public class Vetor {
 
