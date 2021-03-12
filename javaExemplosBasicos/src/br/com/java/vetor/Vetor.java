@@ -57,6 +57,14 @@ public class Vetor {
 	private boolean posicaoValida(int posicao) {
 		return posicao >= 0 && posicao <= this.totalDeAlunos;
 	}
+	public boolean contem (Aluno aluno) {
+		for (int i = 0; i < this.totalDeAlunos; i++) {
+			if (aluno.equals(this.alunos[i])) {
+				return true;
+			}
+		}
+		return false;
+	}
 	public void remove (int posicao) {
 		if (!this.posicaoValida(posicao)) {
 			throw new IllegalArgumentException("Posição Inválida!.");
