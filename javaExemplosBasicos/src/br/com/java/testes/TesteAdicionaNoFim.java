@@ -1,7 +1,7 @@
-package br.com.java.vetores;
+package br.com.java.testes;
 
 import br.com.java.modelo.Aluno;
-import br.com.java.modelo.Vetor;
+import br.com.java.vetor.Vetor;
 
 public class TesteAdicionaNoFim {
 	 
