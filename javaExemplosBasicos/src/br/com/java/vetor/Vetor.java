@@ -27,6 +27,16 @@ public class Vetor {
 		this.alunos[posicao] = aluno;
 		this.totalDeAlunos++;
 	}
+	//Busca posição livre
+	public Aluno pega(int posicao) {
+		if (!this.posicaoOcupada(posicao)) {
+			throw new IllegalArgumentException("Posição inválida!.");
+		}
+		return this.alunos[posicao];
+	}
+	private boolean posicaoOcupada(int posicao) {
+		return posicao >= 0 && posicao < this.tamanho();
+	}
 	public int tamanho() {
 		return this.totalDeAlunos;
 	}
