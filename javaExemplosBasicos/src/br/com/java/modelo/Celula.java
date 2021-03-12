@@ -2,6 +2,7 @@ package br.com.java.modelo;
 
 public class Celula {
 	private Celula proxima;
+	private Celula anterior;
 	private Object elemento;
 	
 	public Celula (Celula proxima, Object elemento) {
@@ -22,5 +23,11 @@ public class Celula {
 	}
 	public void setElemento(Object elemento) {
 		this.elemento = elemento;
+	}
+	public Celula getAnterior() {
+		return anterior;
+	}
+	public void setAnterior(Celula anterior) {
+		this.anterior = anterior;
 	}
 }
