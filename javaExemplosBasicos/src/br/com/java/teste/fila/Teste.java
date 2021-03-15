@@ -7,26 +7,36 @@ public class Teste {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		Fila fila = new Fila();
-		Fila<Aluno> fila = new Fila<Aluno>();
+		Fila fila = new Fila();
+//		Fila<Aluno> fila = new Fila<Aluno>();
+		
+	
 		
 		Aluno aluno = new Aluno();
 		fila.insere(aluno);
 		
 		Aluno alunoRemovido = fila.remove();
 		
-		if (fila.vazia()) {
-			System.out.println("A fila está vazia!.");
+//		if (fila.vazia()) {
+//			System.out.println("A fila está vazia!.");
+//		}
+//		Fila<String>filaDeString = new Fila<String>();
+//		filaDeString.insere("Adelaide");
+//		filaDeString.insere("Carolina");
+//		
+//		String carolina = filaDeString.remove();
+//		String adelaide = filaDeString.remove();
+//		
+//		System.out.println(carolina);
+//		System.out.println(adelaide);
+		
+		if (aluno != alunoRemovido) {
+			System.out.println("Erro: O aluno removido é igual ao que foi inserido!>");
 		}
-		Fila<String>filaDeString = new Fila<String>();
-		filaDeString.insere("Adelaide");
-		filaDeString.insere("Carolina");
 		
-		String carolina = filaDeString.remove();
-		String adelaide = filaDeString.remove();
-		
-		System.out.println(carolina);
-		System.out.println(adelaide);
+		if (!fila.vazia()) {
+			System.out.println("Erro: A fila não está vazia!.");
+		}
 	}
 
 }
