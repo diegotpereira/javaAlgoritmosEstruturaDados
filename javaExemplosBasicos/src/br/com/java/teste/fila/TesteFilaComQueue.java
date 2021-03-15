@@ -9,7 +9,7 @@ public class TesteFilaComQueue {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Queue fila = new LinkedList();
+		Queue<Aluno> fila = new LinkedList<Aluno>();
 		
 		Aluno aluno = new Aluno();
 		fila.offer(aluno);
