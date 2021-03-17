@@ -46,4 +46,12 @@ public class ConjuntoEspalhamento {
 	public int tamanho() {
 		return 0;
 	}
+	public List<String> pegaTodas(){
+		List<String> palavras = new ArrayList<String>();
+		
+		for(int i = 0; i < this.tabela.size(); i++) {
+			palavras.addAll(this.tabela.get(i));
+		}
+		return palavras;
+	}
 }
