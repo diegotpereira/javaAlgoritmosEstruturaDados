@@ -6,6 +6,11 @@ public class Carro {
 	private String marca;
 	private String cor;
 	private int ano;
+	
+	public Carro(String nome) {
+		// TODO Auto-generated constructor stub
+		this.nome = nome;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -30,4 +35,9 @@ public class Carro {
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
+	@Override
+	public String toString() {
+		return "Carro: " + this.nome;
+	}
+	
 }
